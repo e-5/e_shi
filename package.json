@@ -1,0 +1,11 @@
+{
+  "name": "e_shi",
+  "version": "0.0.1",
+  "description": "e_shi",
+  "scripts": {
+    "a": "node ./app/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
