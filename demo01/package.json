@@ -11,9 +11,13 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "socket": "node app/index.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
+    "nodejs-websocket": "^1.7.2",
+    "scss": "^0.2.4",
     "socket.io": "^2.3.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"

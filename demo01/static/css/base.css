@@ -5,12 +5,12 @@ html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input,
 *{box-sizing: border-box;}
 html, body {
   min-height: 100%;
+  font-size: 10px;
 }
 
 body {
   font-family: "Microsoft YaHei";
   color:#333;
-  font-size: 10px;
 }
 h1, h2, h3, h4, h5, h6{font-weight:normal;}
 ul,ol {
