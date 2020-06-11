@@ -62,4 +62,10 @@ export default {
 .main::-webkit-scrollbar{
     display: none;
 }
+@media screen and (min-width: 1024px){
+  #app{
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
 </style>
