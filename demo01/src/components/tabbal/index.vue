@@ -132,4 +132,11 @@ export default {
 .item span{
   margin-top: 0.5rem;
 }
+@media screen and (min-width: 1024px){
+  .tabbal{
+    width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 </style>

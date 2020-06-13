@@ -87,4 +87,11 @@ export default {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 1024px){
+  .content{
+    width: 1000px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 </style>
