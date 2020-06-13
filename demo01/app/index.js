@@ -1,6 +1,7 @@
 let ws = require("nodejs-websocket");
 console.log("开始建立链接");
 ws.createServer(function (conn) {
+  console.log(this)
   conn.on("text", function (str) {
     console.log("收到的信息为", str);
       conn.send(`${str}（机器人`)

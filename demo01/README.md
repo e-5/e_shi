@@ -4,6 +4,10 @@
 
 ## Build Setup
 
+``` 碰到不会的情况
+#gm
+请写上  window.GM = "自己跑起来吧！！"
+程序就会自动完善
 ``` bash
 # install dependencies
 npm install

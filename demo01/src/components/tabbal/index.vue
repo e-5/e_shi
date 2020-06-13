@@ -61,7 +61,7 @@ export default {
     gogogo(i) {
       var list = this.list;
       if (list[i].default) return;
-      this.$router.push({ path: list[i].path });
+      this.$router.replace({ path: list[i].path });
       for (let v of list) {
         v.default = false;
       }

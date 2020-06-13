@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="list">
-      <div class="item" v-for="(item,index) in 99" :key="index">
+      <div class="item" v-for="(item,index) in 99" :key="index" @click="go">
         <img class="i-img" src="" alt="">
         <div class="i-right">
           <div class="r1">
@@ -26,6 +26,8 @@ export default {
     go() {
       this.$router.push("/q/index");
     }
+  },
+  mounted(){
   }
 };
 </script>
