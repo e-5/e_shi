@@ -11,6 +11,12 @@ Vue.config.productionTip = false
 
 Vue.prototype.$axios = axios
 Vue.prototype.$h = util._axios
+let local = {}
+if(window.localStorage) {
+  local = window.localStorage
+}
+Vue.prototype.$local = local
+Vue.prototype.$socketURL = "ws://localhost:8001"
 
 /* eslint-disable no-new */
 var v = new Vue({

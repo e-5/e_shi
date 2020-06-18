@@ -33,6 +33,7 @@ export default {
     obj.method = obj.method || 'get'
     return new Promise((_res, rej) => {
       this.$axios(obj).then(res => {
+        console.log(res)
         if (res.status == 200) {
           _res(res.data)
         } else {

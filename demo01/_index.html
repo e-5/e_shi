@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>1</h1>
+</body>
+<script>
+  // var xhr = new XMLHttpRequest();
+  // xhr.open('get', 'http://127.0.0.1:1234/api');
+  // xhr.onreadystatechange = function (e) {
+  //   console.log(xhr)
+  //   console.log(e)
+  //   if (xhr.readyState == 4 && xhr.status == 200) {
+  //     //步骤五 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
+  //     console.log(xhr.responseText);//输入相应的内容
+  //   }
+  // }
+  // xhr.send();
+  function emit(){
+    this.database = {}
+    this.on = (name,callback) => {
+      if(!this.database[name]) {
+        this.database[name] = []
+      }
+      this.database[name].push(callback)
+    }
+    this.emit = (name,data) => {
+      if(this.database[name] && this.database[name].length) {
+        this.database[name].forEach(item => item(data))
+      }
+    }
+    this.close = (name) => {
+      if(this.database[name]) {
+        this.database[name].length = 0
+      }
+    }
+  }
+  window.$e = new emit()
+</script>
+
+</html>

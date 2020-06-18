@@ -28,6 +28,9 @@ export default {
     }
   },
   mounted(){
+    this.$h({url:'http://127.0.0.1:1234'}).then(res=>{
+      console.log(res)
+    })
   }
 };
 </script>
